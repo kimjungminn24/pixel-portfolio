@@ -159,3 +159,5 @@ Bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md
 ## License
 
 MIT
+
+The pixel font [Galmuri](https://galmuri.quiple.dev) and [Pretendard](https://github.com/orioncactus/pretendard) are loaded from a CDN, not bundled here. Both are under the SIL Open Font License 1.1.

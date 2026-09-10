@@ -159,3 +159,5 @@ scripts/      serve.js, check.js
 ## 라이선스
 
 MIT
+
+픽셀 폰트 [Galmuri](https://galmuri.quiple.dev) 와 [Pretendard](https://github.com/orioncactus/pretendard) 는 저장소에 넣지 않고 CDN 에서 불러옵니다. 둘 다 SIL Open Font License 1.1 입니다.
