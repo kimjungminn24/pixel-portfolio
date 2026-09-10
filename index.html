@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="pixel">
+<head>
+  <meta charset="utf-8">
+  <!-- site root. For a sub folder use e.g. /my-repo/ (the Pages workflow sets it for project sites) -->
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Portfolio</title>
+  <meta name="description" content="A pixel-art portfolio template">
+  <link rel="icon" href="assets/favicon.svg">
+  <script>
+    try {
+      var t = new URLSearchParams(location.search).get('theme') || localStorage.getItem('pixel-portfolio:theme');
+      if (t === 'pixel' || t === 'modern') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme-pixel.css">
+  <link rel="stylesheet" href="css/theme-modern.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="./" id="site-logo">Pixel Portfolio</a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="./" data-nav="home">Home</a>
+      <a href="logs" data-nav="logs">Dev log</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Switch 240p / 4K" aria-label="Display mode">
+      <span class="theme-toggle__opt" data-value="pixel" aria-hidden="true">240p</span>
+      <span class="theme-toggle__opt" data-value="modern" aria-hidden="true">4K</span>
+    </button>
+  </header>
+  <main id="app" class="app" tabindex="-1">
+    <noscript><p class="error">This site needs JavaScript to render its pages.</p></noscript>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script type="module" src="js/boot.js"></script>   <!-- boot screen, optional -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

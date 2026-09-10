@@ -1,0 +1,127 @@
+{
+  "site": {
+    "title": "Pixel Portfolio",
+    "owner": "Your Name",
+    "tagline": "Frontend developer who likes small, fast things",
+    "intro": "I build web apps and small open-source tools. This page collects what I made and how I fixed it along the way.",
+    "avatar": "assets/avatar.svg",
+    "avatar_pixel": "assets/avatar-pixel.svg",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/your-id"
+      }
+    ],
+    "sections": [
+      {
+        "type": "project",
+        "label": "Projects"
+      },
+      {
+        "type": "opensource",
+        "label": "Open source"
+      }
+    ],
+    "footer": "© 2026 Your Name. Built with [pixel-portfolio](https://github.com/kimjungminn24/pixel-portfolio)"
+  },
+  "labels": {
+    "nav_home": "Home",
+    "nav_logs": "Dev log"
+  },
+  "projects": [
+    {
+      "id": "sample",
+      "type": "project",
+      "title": "Sample Project",
+      "summary": "This card is an example. Every field is filled in, so read it, edit it, then delete it",
+      "thumbnail": "assets/thumbs/sample-4k.svg",
+      "thumbnail_pixel": "assets/thumbs/sample.svg",
+      "repo": "https://github.com/your-id/sample",
+      "demo": "https://example.com",
+      "links": [
+        {
+          "label": "Slides",
+          "url": "https://example.com/slides"
+        }
+      ],
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "period": "2026.09",
+      "role": "Solo developer",
+      "aboutFile": "content/sample/about.md",
+      "improvements": [
+        {
+          "id": "first-paint",
+          "title": "Faster first paint",
+          "summary": "Overlap font loading with the data request so the first paint comes sooner",
+          "tags": [
+            "performance"
+          ],
+          "metrics": [
+            {
+              "label": "First paint",
+              "before": "1.8s",
+              "after": "0.6s"
+            },
+            {
+              "label": "Transfer size",
+              "before": "412 KB",
+              "after": "96 KB"
+            },
+            {
+              "label": "Requests",
+              "before": "23",
+              "after": "7"
+            }
+          ],
+          "file": "content/sample/improvements/first-paint.md"
+        },
+        {
+          "id": "inline-body",
+          "title": "Write the body right in the JSON",
+          "summary": "Short notes go in a body field instead of a file",
+          "body": "A short improvement note does not need its own file. Write it in `body`.\n\n- Plain markdown\n- Line breaks as `\\n`\n\nMove it to `file` when it grows."
+        }
+      ],
+      "logs": [
+        {
+          "date": "2026-09-10",
+          "title": "First deploy of the template",
+          "summary": "Published to GitHub Pages and checked the domain",
+          "tags": [
+            "deploy"
+          ],
+          "file": "content/sample/logs/2026-09-10.md"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "Add the 240p / 4K toggle",
+          "file": "content/sample/logs/2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "id": "pixel-portfolio",
+      "type": "opensource",
+      "title": "pixel-portfolio",
+      "summary": "A pixel-art portfolio template built from one JSON file and a few markdown pages. One button switches between 240p and 4K",
+      "thumbnail": "assets/thumbs/pixel-portfolio-4k.svg",
+      "thumbnail_pixel": "assets/thumbs/pixel-portfolio.svg",
+      "repo": "https://github.com/kimjungminn24/pixel-portfolio",
+      "demo": "https://kimjungminn24.github.io/pixel-portfolio/",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "period": "2026.09 ~",
+      "role": "Solo developer, zero dependencies",
+      "about": "A portfolio template you can drop on any static host with no build step. A small client-side router draws the project list, improvement write-ups and dev log; in 240p mode you get a pixel font, chunky thumbnails and a boot screen.\n\n- Data: one `data/portfolio.json` plus markdown under `content/`\n- Theme: colors, fonts, radii and shadows are CSS variables\n- Check: `npm run check` catches duplicate ids, missing files and bad dates",
+      "improvements": [],
+      "logs": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "pixel-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A dependency-free pixel-art portfolio template. One JSON file, a few markdown pages, and a 240p / 4K toggle.",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://kimjungminn24.github.io/pixel-portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimjungminn24/pixel-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimjungminn24/pixel-portfolio/issues"
+  },
+  "keywords": [
+    "portfolio",
+    "template",
+    "pixel-art",
+    "static-site",
+    "github-pages",
+    "no-build"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "serve": "node scripts/serve.js",
+    "check": "node scripts/check.js",
+    "test": "node scripts/check.js"
+  }
+}

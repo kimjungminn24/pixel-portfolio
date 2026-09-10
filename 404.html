@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pixel Portfolio</title>
+  <!-- same value as index.html -->
+  <base href="/">
+  <script>
+    // GitHub Pages serves this for routes like /p/sample. Hand the path to index.html as ?r= and app.js restores it
+    var base = new URL(document.baseURI).pathname;
+    var rest = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : location.pathname.replace(/^\//, '');
+    location.replace(base + '?r=/' + rest + location.search.replace(/^\?/, '&') + location.hash);
+  </script>
+</head>
+<body></body>
+</html>
