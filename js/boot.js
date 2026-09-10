@@ -4,7 +4,7 @@ import { flash } from './theme.js';
 
 const KEY = 'pixel-portfolio:booted';
 const TICK = { type: 60, load: 150, spin: 120 };
-const HOLD = { hello: 300, ok: 350, end: 900, fonts: 400, ready: 3000 };
+const HOLD = { hello: 300, ok: 350, end: 900, fonts: 1500, ready: 3000 };
 
 // 16x16 globe: a 32-column world map scrolls through a circle
 const GLOBE = 16;

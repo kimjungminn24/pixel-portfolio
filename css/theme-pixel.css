@@ -82,16 +82,16 @@
 [data-theme="pixel"] .item:hover { transform: translate(-3px, -3px); filter: drop-shadow(var(--shadow-hover)); }
 [data-theme="pixel"] .btn:active { transform: none; filter: drop-shadow(var(--shadow-press)); }
 
-/* boot screen (js/boot.js), just under the scanlines */
+/* boot screen (js/boot.js), above the scanlines so the stripes do not cross the text */
 .boot {
-  position: fixed; inset: 0; z-index: 998;
+  position: fixed; inset: 0; z-index: 1000;
   display: grid; place-items: center;
   padding: 32px 20px;
   background: var(--ink); color: var(--bg);
-  font: clamp(var(--fs), 1.8vw, 22px) / 1.8 var(--font);
+  font: clamp(20px, 2.6vw, 34px) / 1.8 var(--font);
   text-transform: uppercase; text-align: center; cursor: pointer;
 }
-.boot__globe { display: block; width: 4em; height: 4em; margin: 0 auto 1em; image-rendering: pixelated; }
+.boot__globe { display: block; width: 5em; height: 5em; margin: 0 auto .8em; image-rendering: pixelated; }
 .boot__line { display: block; min-height: 1.8em; white-space: pre; }
 .boot__cursor { animation: blink 1s steps(1) infinite; }
 
